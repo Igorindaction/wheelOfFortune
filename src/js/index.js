@@ -1,6 +1,7 @@
 const delay = ms => {
   return new Promise(r => setTimeout(() => r(), ms))
 }
+console.log('test1')
 const url = 'https://jsonplaceholder.typicode.com/todos'
 async function fetchAsyncToDos() {
   console.log('fetching toDos')

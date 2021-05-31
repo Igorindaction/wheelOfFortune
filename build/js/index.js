@@ -12,6 +12,7 @@ var delay = function delay(ms) {
   });
 };
 
+console.log('test1');
 var url = 'https://jsonplaceholder.typicode.com/todos';
 
 function fetchAsyncToDos() {
