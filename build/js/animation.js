@@ -23,7 +23,6 @@ window.onload = function () {
     setTimeout(function () {
       popUp.style.opacity = 1;
     }, 500);
-    console.log('Ваша категория - память!');
   }
 
   function getRandomInt(min, max) {
@@ -98,50 +97,36 @@ window.onload = function () {
       iterationCount: '1',
       timingFunction: 'linear',
       complete: function complete() {
-        console.log($('.arrow-wrapper').css('transform'));
-        var govno = getRotationDegrees($('.arrow-wrapper'));
+        var degree = getRotationDegrees($('.arrow-wrapper'));
 
-        if (govno <= 25) {
+        if (degree <= 25) {
           setNameOfPopUp(name = 'память');
-        } else if (govno <= 51) {
+        } else if (degree <= 51) {
           setNameOfPopUp(name = 'кругозор');
-          console.log('Ваша категория - кругозор');
-        } else if (govno <= 83) {
+        } else if (degree <= 83) {
           setNameOfPopUp(name = 'общее развитие');
-          console.log('Ваша категория - общее развитие');
-        } else if (govno <= 103) {
+        } else if (degree <= 103) {
           setNameOfPopUp(name = 'социальность');
-          console.log('Ваша категория - социальность');
-        } else if (govno <= 128) {
+        } else if (degree <= 128) {
           setNameOfPopUp(name = 'личностные качества');
-          console.log('Ваша категория - личностные качества');
-        } else if (govno <= 153) {
+        } else if (degree <= 153) {
           setNameOfPopUp(name = 'самооценка');
-          console.log('Ваша категория - самооценка');
-        } else if (govno <= 179) {
+        } else if (degree <= 179) {
           setNameOfPopUp(name = 'эрудиция');
-          console.log('Ваша категория - эрудиция');
-        } else if (govno <= 214) {
+        } else if (degree <= 214) {
           setNameOfPopUp(name = 'медитация');
-          console.log('Ваша категория - медитация');
-        } else if (govno <= 237) {
+        } else if (degree <= 237) {
           setNameOfPopUp(name = 'хобби');
-          console.log('Ваша категория - хобби');
-        } else if (govno <= 261) {
+        } else if (degree <= 261) {
           setNameOfPopUp(name = 'outdoor');
-          console.log('Ваша категория - outdoor');
-        } else if (govno <= 294) {
+        } else if (degree <= 294) {
           setNameOfPopUp(name = 'планирование');
-          console.log('Ваша категория - планирование');
-        } else if (govno <= 320) {
+        } else if (degree <= 320) {
           setNameOfPopUp(name = 'отдых');
-          console.log('Ваша категория - отдых');
-        } else if (govno <= 345) {
+        } else if (degree <= 345) {
           setNameOfPopUp(name = 'дисциплина');
-          console.log('Ваша категория - дисциплина');
-        } else if (govno <= 359) {
+        } else if (degree <= 359) {
           setNameOfPopUp(name = 'спорт');
-          console.log('Ваша категория - спорт');
         }
       }
     });
